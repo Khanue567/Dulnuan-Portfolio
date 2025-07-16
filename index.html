@@ -1,165 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Online Portfolio</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(to bottom, #e8f5e9, #e0f7fa);
-        }
-
-        header {
-            background: #2e7d32;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #1b5e20;
-            padding: 1rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        nav a {
-            color: white;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s, transform 0.3s;
-        }
-
-        nav a:hover {
-            background: #4caf50;
-            transform: scale(1.1);
-        }
-
-        section {
-            padding: 2rem;
-            margin: 2rem auto;
-            max-width: 900px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            color: #2e7d32;
-        }
-
-        .home, .about, .skills, .projects, .experience {
-            text-align: center;
-        }
-
-        .about img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin: 1rem 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            background: #f1f8e9;
-            margin: 0.5rem 0;
-            padding: 0.8rem;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background: #1b5e20;
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-            margin-top: 2rem;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* Hover Effects for Buttons */
-        .btn {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.8rem 1.5rem;
-            color: white;
-            background: #2e7d32;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s, transform 0.3s;
-        }
-
-        .btn:hover {
-            background: #4caf50;
-            transform: scale(1.05);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my projects, learn about me, and connect.</p>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-    </nav>
-    <section id="home" class="home">
-        <h2>Home</h2>
-        <p>This is the Home page of my portfolio. Discover my work and journey as a tech enthusiast.</p>
-    </section>
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <img src="462645505_611082901345027_2124323136751737436_n.jpg" alt="Profile Picture">
-        <p>Hi, I'm Khane Jay T. Dulnuan, a freshman studying at University of the Cordilleras, majoring in Web Development.</p>
-    </section>
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java Programming</li>
-            <li>Web Development (HTML, Java)</li>
-            <li>Problem Solving</li>
-            <li>Team Collaboration</li>
-        </ul>
-    </section>
-    <section id="experience" class="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Web Designer:</strong> Created a portfolio and design (2024)</li>
-            <li><strong>Web Developer Student:</strong> Developed projects using Java and web technologies (2024)</li>
-            <li><strong>Researcher:</strong> Collaborated on an academic project about gender sensitivity and stereotyping (2024)</li>
-        </ul>
-    </section>
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Online Portfolio:</strong> A web project showcasing my skills and creativity.</li>
-            <li><strong>E-Article Collage:</strong> A research-based project on gender sensitivity.</li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2024 Khane Jay T. Dulnuan. All rights reserved.</p>
-    </footer>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- About Me Section -->
+  <section id="about" class="bg-white py-10 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">About Me</h2>
+    <p class="text-gray-700 max-w-xl mx-auto">
+      Hi! I'm an IT student with a passion for learning technology and building useful digital solutions.
+      I enjoy exploring coding, troubleshooting tech issues, and improving my skills in web development, programming, and computer systems.
+      This portfolio shows what I've worked on so far in my journey as a future IT professional.
+    </p>
+  </section>
+<!-- Skills Section -->
+<section id="skills" class="bg-gray-100 py-10 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-4">Skills</h2>
+  <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-xl mx-auto text-left text-gray-700">
+    <li>✔️ HTML, Java, and Python</li>
+    <li>✔️ Java Programming</li>
+    <li>✔️ Microsoft Office (Word, Excel, PowerPoint)</li>
+    <li>✔️ Troubleshooting basic computer issues</li>
+    <li>✔️ Teamwork & Communication</li>
+    <li>✔️ Time Management</li>
+  </ul>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="bg-white py-10 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-4">Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left text-gray-700">
+    
+    <div class="border p-4 rounded-lg shadow bg-gray-50">
+      <h3 class="text-xl font-semibold mb-2">Banking System</h3>
+      <p>A Java program that simulates basic banking operations like deposit, withdraw, and balance check.</p>
+    </div>
+
+    <div class="border p-4 rounded-lg shadow bg-gray-50">
+      <h3 class="text-xl font-semibold mb-2">Grocery Shopping Calculator</h3>
+      <p>This program calculates the total price of groceries including quantity and discount.</p>
+    </div>
+
+    <div class="border p-4 rounded-lg shadow bg-gray-50">
+      <h3 class="text-xl font-semibold mb-2">Retail Management System</h3>
+      <p>A Java project for managing products, sales, and customer information in a retail store.</p>
+    </div>
+
+    <div class="border p-4 rounded-lg shadow bg-gray-50">
+      <h3 class="text-xl font-semibold mb-2">Shopping Cart System</h3>
+      <p>This program lets users add, remove, and view items in a cart — simulating an online shop experience.</p>
+    </div>
+
+    <div class="border p-4 rounded-lg shadow bg-gray-50">
+      <h3 class="text-xl font-semibold mb-2">Weather Reporter</h3>
+      <p>A simple weather-based program that outputs weather data like temperature, rain level, or conditions based on user input.</p>
+    </div>
+
+    <div class="border p-4 rounded-lg shadow bg-gray-50">
+      <h3 class="text-xl font-semibold mb-2">Playlist Manager</h3>
+      <p>This project allows users to create, display, and manage a list of songs — like a music playlist system.</p>
+    </div>
+
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-100 py-10 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+  <p class="text-gray-700 mb-6">Feel free to reach out for collaboration, questions, or feedback!</p>
+  
+  <div class="max-w-md mx-auto text-left text-gray-700">
+    <p><strong>Email:</strong> khanedulnuan@gmail.com</p>
+    <p><strong>Facebook:</strong> 
+      <a href="https://www.facebook.com/Khane.Dulnuan.K" class="text-blue-500 hover:underline" target="_blank">
+        facebook.com/Khane.Dulnuan.K
+      </a>
+    </p>
+    <p><strong>Phone:</strong> 0915-772-8893</p>
+  </div>
+</section>
+<!-- Navigation Bar -->
+<nav class="bg-white shadow p-4 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
+    <h1 class="text-xl font-bold text-gray-800">My Portfolio</h1>
+    <ul class="flex space-x-4 text-sm font-medium text-gray-700">
+      <li><a href="#about" class="hover:text-blue-500">About</a></li>
+      <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+      <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
 </body>
 </html>
